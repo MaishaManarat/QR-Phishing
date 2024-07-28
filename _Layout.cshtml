@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - MyWebApp</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/MyWebApp.styles.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+    @RenderSection("Head", required: false)
+</head>
+<body>
+    <header>
+        <nav> <!-- Your navigation bar code here --> </nav>
+    </header>
+
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    <footer> <!-- Your footer code here --> </footer>
+</body>
+</html>
