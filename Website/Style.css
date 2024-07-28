@@ -1,0 +1,97 @@
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fff;
+}
+
+.container {
+    /* background-color: #fff; */
+    background-image: url('/images/background1.jpg'); /* Specify the path to your background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    height: 100vh; /* Ensure the background covers the full viewport height */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the content inside the container */
+    max-width: 400px;
+    width: 90%; /* Adjust container width for smaller screens */
+    margin: 20px auto; /* Center container horizontally */
+}
+
+.logo {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 10px; /* Add margin bottom to create gap */
+}
+
+h1 {
+    font-size: 24px; /* Adjust font size for 'Register' text */
+    margin-bottom: 20px;
+    color: #ffffff;
+    position: relative; /* Relative positioning for pseudo-element */
+    text-shadow: 2px 2px 0px #472626, -2px -2px 0px #f80000; /* Create a double text effect */
+}
+
+
+h2 {
+    font-size: 12px; /* Adjust font size for 'Register' text */
+    color:#ffffff;
+    font-style:italic;
+    margin-bottom: 20px;
+    
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px; /* Adjust font size for labels */
+    color:#000000;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 14px; /* Adjust font size for inputs */
+}
+
+button {
+    background-image: url('/images/button1.png');
+    padding: 10px 15px;
+    color: #fdfdfd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00b351 !important;
+}
+
+/* Responsive Layout */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%; /* Full width for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    h2 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    .form-group label,
+    .form-group input {
+        font-size: 12px; /* Adjust font size for labels and inputs on smaller screens */
+    }
+}
